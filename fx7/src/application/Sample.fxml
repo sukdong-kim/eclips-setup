@@ -10,9 +10,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="400.0" prefWidth="600.0" spacing="20.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" text="마일을 km로 변환" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="마일을 km로 변환">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin></Label>
             <HBox spacing="20.0">
                <children>
                   <Label text="거리 입력" />
@@ -31,8 +34,14 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
             </HBox>
-            <Label text="출력" />
-            <TextField fx:id="tf2" />
+            <Label text="변환 결과">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="tf2">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin></TextField>
          </children>
       </VBox>
    </children>

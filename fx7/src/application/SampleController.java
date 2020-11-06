@@ -18,7 +18,7 @@ public class SampleController {
 		double k=t*1.609344;
 		int k1 = (int)(k*100);
 		double k2 = k1/100.0;
-		tf2.setText(t+" 마일은 "+k2+" 킬로미터입니다.");
+		tf2.setText(t+" 마일은 " + k2 + " 킬로미터");
     }
 
     @FXML
