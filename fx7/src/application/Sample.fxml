@@ -16,7 +16,7 @@
             <HBox spacing="20.0">
                <children>
                   <Label text="거리 입력" />
-                  <TextField />
+                  <TextField fx:id="tf1" />
                </children>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -24,15 +24,15 @@
             </HBox>
             <HBox spacing="20.0">
                <children>
-                  <Button mnemonicParsing="false" text="변환" />
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="종료" />
+                  <Button mnemonicParsing="false" onAction="#onClickb1" text="변환" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickb2" text="종료" />
                </children>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
             </HBox>
             <Label text="출력" />
-            <TextField />
+            <TextField fx:id="tf2" />
          </children>
       </VBox>
    </children>
